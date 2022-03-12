@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap');
+
+body {
+  background-color: #eee;
+  color: #464646;
+  font-size: 16px;
+  font-family: 'PT Sans', sans-serif;
+}
+
+main {
+  width: 800px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 1em;
+  margin-block-start: 1.5em;
+  margin-block-end: 0;
+}
+
+h3 {
+  font-weight: bold;
+  font-size: 1.15em;
+  margin-block-start: 2em;
+  margin-block-end: 0;
+}
+
+.link-decoration {
+  text-decoration: none;
+  color: #464646;
+}
+
+.link-decoration:hover {
+  text-decoration: underline;
+}
+
+.link-disabled {
+  color: #999;
+}
+
+.link-disabled:hover {
+  color: #999;
+}
+
+section {
+  background-color: white;
+  padding: 16px 24px 28px;
+  margin: 15px;
+  border-radius: 3px;
+}
