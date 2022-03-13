@@ -1,0 +1,41 @@
+.container {
+  border: blue medium dashed;
+
+  display: flex;
+
+  flex-wrap: nowrap;
+  flex-direction: row;
+
+  justify-content: space-evenly;
+}
+
+.elem1 {
+  flex: 1 1 100px;
+
+  height: 100px;
+  background: gold;
+}
+
+.elem2 {
+  flex: 1 1 80px;
+  height: 80px;
+  background: gold;
+}
+
+.elem3 {
+  flex: 1 1 60px;
+  height: 60px;
+  background: gold;
+}
+
+.elem4 {
+  flex: 1 1 40px;
+  height: 40px;
+  background: gold;
+}
+
+.elem5 {
+  flex: 1 1 20px;
+  height: 20px;
+  background: gold;
+}
