@@ -7,11 +7,141 @@ body {
   font-family: 'PT Sans', sans-serif;
 }
 
-main {
-  width: 800px;
+.main {
+  display: flex;
+  width: 1180px;
   height: 200px;
   margin: 0 auto;
 }
+
+.personal-info {
+
+}
+
+.personal-info .personal-info__block {
+  background-color: white;
+  padding: 16px 24px 28px;
+  margin: 15px;
+  border-radius: 3px;
+  width: 250px;
+  font-size: 16px;
+}
+
+.personal-info .block__splitter {
+  opacity: 0.2;
+}
+
+.profile-info {
+  font-size: 16px;
+}
+
+.profile-info .profile-info__info-block-big {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 16px;
+}
+
+.profile-info .profile-info__info-block-small {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 4px;
+}
+
+.profile-info .profile-info__disabled_text {
+  color: #999;
+}
+
+.profile-info .profile-info__contacts {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+}
+
+.profile-info .profile-info__contacts img {
+  margin-bottom: 25px;
+  width: 86px;
+  height: 98px;
+}
+
+.profile-info .profile-info__friend-button {
+  width: 95px;
+  height: 38px;
+  border: 1px solid #5677fc;
+  padding: 6px 10px;
+  border-radius: 5px;
+  font-weight: 700;
+  margin-top: 12px;
+  background: #5677fc;
+  color: #fff;
+}
+
+
+/* Profile Block */
+.profile-block {
+}
+
+.profile-block .profile-block__avatar {
+  display: flex;
+  justify-content: center;
+  padding: 30px 0 43px;
+}
+
+.profile-block .profile-block__avatar img {
+  width: 150px;
+  height: 150px;
+}
+
+.profile-block .profile-block__name {
+  font-size: 28px;
+}
+
+.profile-block .profile-block__name a {
+  text-decoration: none;
+  color: #464646;
+}
+
+.profile-block .profile-block__stack {
+  margin-top: 12px;
+}
+
+.profile-block .profile-block__work-status {
+  margin-top: 20px;
+  font-weight: 700;
+  color: #65c178;
+}
+
+.profile-block .profile-block__buttons {
+  display: flex;
+  margin-top: 28px;
+  grid-gap: 12px;
+}
+
+.profile-block .profile-block__button {
+  padding: 6px 10px;
+  border-radius: 5px;
+  border: 1px solid;
+  font-weight: 700;
+}
+
+.profile-block .profile-block__friend_btn {
+  background: #64c178;
+  border-color: #64c178;
+  color: #fff;
+}
+
+.profile-block .profile-block__other_btn {
+  background: #fff;
+  color: #5677fc;
+}
+
+.profile-block .profile-block__other_btn:hover {
+  background: #5677fc;
+  color: #fff;
+}
+
 
 /* Block */
 .block {
@@ -25,7 +155,7 @@ main {
   font-size: 18px;
 
   margin-block-start: 0;
-  margin-block-end: 1em;
+  margin-block-end: 1.5em;
 }
 
 .block .block__content {
@@ -33,7 +163,7 @@ main {
 }
 
 .block .block__splitter {
-  /*height: ;*/
+  opacity: 0.2;
 }
 
 
@@ -41,16 +171,15 @@ main {
 .contr {
   display: flex;
   font-size: 16px;
-
-  margin-top: 15px;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
-.contr .contr__image{
-
+.contr .contr__image {
   margin-right: 15px;
 }
 
-.contr .contr__image img{
+.contr .contr__image img {
   border-radius: 3px;
   width: 50px;
   height: 50px;
@@ -95,7 +224,24 @@ main {
 
 /* work experience */
 .work-experience {
+  display: flex;
   font-size: 16px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.work-experience .work-experience__image {
+  margin-right: 15px;
+}
+
+.work-experience .work-experience__image img {
+  border-radius: 3px;
+  width: 50px;
+  height: 50px;
+}
+
+.work-experience .work-experience__content {
+
 }
 
 .work-experience a {
@@ -109,38 +255,120 @@ main {
 
 .work-experience .work-experience__corp-name {
   font-size: 21px;
-  margin-block-start: 1.5em;
+  margin-block-start: 0;
   margin-block-end: 0;
 }
 
-.work-experience .work-experience__corp-name a{
+.work-experience .work-experience__corp-name a {
   color: #464646;
+}
+
+.work-experience .work-experience__a_disabled a {
+  color: #999;
+  text-decoration: none;
 }
 
 .work-experience .work-experience__corp-description {
-
+  margin-block-end: 0.25em;
 }
 
 .work-experience .work-experience__corp-location {
-
+  margin-block-start: 0;
+  margin-block-end: 0;
 }
-.work-experience .work-experience__corp-location a{
+
+.work-experience .work-experience__corp-location a {
   color: #464646;
 
 }
 
-.work-experience .work-experience__job-name{
+.work-experience .work-experience__job-name {
   margin-block-start: 1.5em;
   margin-block-end: 0;
 }
 
-.work-experience .work-experience__job-desc p{
-  margin-block-start: 0.25em;
-  margin-block-end: 0.25em;
+.work-experience .work-experience__job-desc p {
+  margin-block-start: 0.5em;
+  margin-block-end: 1em;
 }
 
-.work-experience .work-experience__used-stack a{
+.work-experience .work-experience__used-stack {
+  padding-top: 10px;
+}
+
+.work-experience .work-experience__used-stack a {
   color: #464646;
+}
+
+/* edu-info */
+.edu-info {
+  display: flex;
+  font-size: 16px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.edu-info a {
+  text-decoration: none;
+  color: #007aff;
+}
+
+.edu-info a:hover {
+  text-decoration: underline;
+}
+
+.edu-info .edu-info__organization_image {
+  margin-right: 15px;
+}
+
+.edu-info .edu-info__organization_image img {
+  border-radius: 3px;
+  width: 50px;
+  height: 50px;
+}
+
+.edu-info .edu-info__content {
+
+}
+
+.edu-info .edu-info__organization_name {
+  font-size: 21px;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+.edu-info .edu-info__organization_name a {
+  color: #464646;
+}
+
+.edu-info .edu-info__organization_desc {
+  margin-top: 4px;
+}
+
+.edu-info .edu-info__organization_location {
+  margin-top: 4px;
+}
+
+.edu-info .edu-info__whats-studying {
+  margin-top: 23px;
+}
+
+.edu-info .edu-info__studying-block {
+  padding-bottom: 20px;
+}
+
+.edu-info .edu-info__studying-title {
+  font-size: 18px;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+.edu-info .edu-info__studying-date {
+  margin-top: 4px;
+}
+
+.edu-info .edu-info__studying-desc {
+  margin-top: 20px;
 }
 
 /*h2 {*/
